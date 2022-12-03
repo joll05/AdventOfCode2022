@@ -1,7 +1,7 @@
 f = open("input.txt")
 input_raw = f.read().strip()
 f.close()
-input_lines = input_raw.split("\n")
+input_lines = input_raw.splitlines()
 
 def shape_to_int(shape):
     match shape:

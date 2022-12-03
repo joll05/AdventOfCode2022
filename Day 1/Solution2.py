@@ -7,7 +7,7 @@ elves = []
 
 for elf in input_sections:
     elves += [0]
-    for number in elf.split("\n"):
+    for number in elf.splitlines():
         elves[-1] += int(number)
 
 elves.sort(reverse=True)
